@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html><head><title>The unofficial Mobile Center Android Class Sign Up Website!</title>
+
+
+
+<link rel="stylesheet" type="text/css" href="paint.css">
+ <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCwKpcaGf6MK_bObFpEUXXmvViko7UKBvA&sensor=false"></script>
+<script type="text/javascript" src="blink.js"></script>
+
+</head>
+<body onload="initialize()">
+<div id="the_new_chicken_wrap">
+<ul id="nav">
+<li>
+<a href="#"><img src="What.png" alt="" onclick="clickTabs('what_android')"></a>
+</li>
+<li>
+<a href="#"><img src="Home.png" alt="" onclick="clickTabs('body')"></a>
+</li>
+<li>
+<a href="#"><img src="Classes.png" alt="" onclick="clickTabs('dem_classes')"></a>
+</li>
+</ul>
+<div id="body">
+<p id="flavor">
+Please use the form on the right hand side to sign up for Android Classes!
+</p>
+<img src="droid_head.png" alt="dat android be peepin'" id="droid_head">
+
+
+<form action="javascript:;" enctype="application/x-www-form-urlencoded" method="post" onsubmit="call('submit.php')">
+<ul>
+	<li>
+	<p class="list">Last Name.</p>
+	<input class="entry" name="LName" size="50" maxlength="250" value="Last Name?" onkeyup="mail.newLname(this.value)" type="text">
+	</li>
+	<li>
+	<p class="list">First Name.</p>
+	<input class="entry" name="FName" size="50" maxlength="250" value="First Name?" onkeyup="mail.newFname(this.value)" type="text">
+	</li>
+	<li>
+	<p class="list">Phone Number.</p>
+	<input class="entry" name="Numba" size="18" maxlength="18" value="Can we have it?" onkeyup="mail.newNumba(this.value)" type="text">
+	</li>
+	<li>
+	<p class="list">Email.</p>
+	<input class="entry" name="Email" size="25" maxlength="250" value="Better than Snail Mail!" onkeyup="mail.newEmail(this.value)" type="text">
+	</li>
+	<li>
+	<p class="list">Street?</p>
+	<input class="entry" name="Email" size="25" maxlength="250" value="Better than Snail Mail!" onkeyup="mail.newStreet(this.value)" type="text">
+	</li>
+	<li>
+	<p class="list">Zip?</p>
+	<input class="entry" name="Email" size="25" maxlength="250" value="Better than Snail Mail!" onkeyup="mail.newZip(this.value)" type="text">
+	</li>
+	<li>
+	<input class="button" name="submit_info" value="Done." type="submit" onclick="calcRoute()">
+	</li>
+</ul>
+</form>
+<div id="map">
+
+</div>
+</div>
+
+<div id="what_android">
+<p>Android is the software that comes on a vast majority of
+smartphones. It is licensed by Google and used by a large amount of
+phone manufactors.
+</p>
+<p>Manufactors such as HTC, Motorola, Samsung, LG, Huwali and more. It
+it considered to be on par, if not better, than the iOS system used by
+the iPhone and developed by Apple.</p>
+</div>
+
+<div id="dem_classes">
+<p>"One-third of the U.S. popluation owns a smartphone today, and a vast majority of them happen to be Android Users."</p>
+<p>"As a service to those new to android and to those who wish to own a
+Android phone but are afraid to take that leap we have developed a
+class that will teach you the basis of Android."</p>
+<p>"In this class you will learn how to..."</p>
+<ul>
+<li>
+<p>Configure Email</p>
+    <br>
+</li>
+<li>
+<p>Set up your Wifi and Hotspot networks</p>
+    <br>
+</li>
+<li>
+<p>Use your bluetooth features to pair devices</p>
+    <br>
+</li>
+<li>
+<p>How to download, use and remove applications</p>
+    <br>
+</li>
+<li>
+<p>And more...</p>
+    <br>
+</li>
+</ul>
+</div>
+<div id="print">
+<!--<input class="button" name="show" value="Show Directions." type="submit" onclick="printDirections()">-->
+<!--<input class="button" name="print" value="Print." type="submit" onclick="window.print()">-->
+<p id="directions">Test text</p>
+</div>
+</div>
+</body></html>
